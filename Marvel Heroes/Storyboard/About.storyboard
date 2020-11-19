@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="38f-fl-vVV">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Marvel-Regular.ttf">
+            <string>Marvel-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--About View Controller-->
+        <scene sceneID="ACb-Jf-0yq">
+            <objects>
+                <viewController id="38f-fl-vVV" customClass="AboutViewController" customModule="Marvel_Heroes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fQ5-og-4Wx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Js-uB-7B8">
+                                <rect key="frame" x="60" y="174" width="255" height="115"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MarvelLogo" translatesAutoresizingMaskIntoConstraints="NO" id="CdB-qj-SJh">
+                                        <rect key="frame" x="7.6666666666666714" y="7.6666666666666572" width="240" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="5c8-uL-Yac"/>
+                                            <constraint firstAttribute="height" constant="100" id="e1A-uJ-72I"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="CdB-qj-SJh" secondAttribute="bottom" constant="7.5" id="Pra-1O-BwD"/>
+                                    <constraint firstAttribute="trailing" secondItem="CdB-qj-SJh" secondAttribute="trailing" constant="7.5" id="dIk-fo-Zm3"/>
+                                    <constraint firstItem="CdB-qj-SJh" firstAttribute="top" secondItem="1Js-uB-7B8" secondAttribute="top" constant="7.5" id="dTz-my-x0h"/>
+                                    <constraint firstItem="CdB-qj-SJh" firstAttribute="centerX" secondItem="1Js-uB-7B8" secondAttribute="centerX" id="tUV-lN-5wB"/>
+                                    <constraint firstItem="CdB-qj-SJh" firstAttribute="leading" secondItem="1Js-uB-7B8" secondAttribute="leading" constant="7.5" id="zkH-Ra-kfZ"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="84O-HT-axW">
+                                <rect key="frame" x="37.666666666666657" y="464" width="300" height="274"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xf6-3o-rDh">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="175"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="IH9-9H-T8A"/>
+                                            <constraint firstAttribute="height" constant="175" id="XC2-A4-3kf"/>
+                                        </constraints>
+                                        <string key="text">Marvel is here to the rescue. It is the hero guide you've been waiting for. With a list of different heroes from different teams, Marvel helps you by making sure that you catch every detail about your favorite heroes.</string>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2020 STEPHEN DEL ROSARIO. ALL RIGHTS RESERVED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8a2-QB-o1M">
+                                        <rect key="frame" x="0.0" y="253" width="300" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="5gm-nS-5lu"/>
+                                            <constraint firstAttribute="width" constant="300" id="whZ-Vf-1LX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KohinoorGujarati-Bold" family="Kohinoor Gujarati" pointSize="9"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wah-6T-fqd">
+                                <rect key="frame" x="25" y="69" width="30" height="32"/>
+                                <fontDescription key="fontDescription" name="Marvel-Regular" family="Marvel" pointSize="20"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressBackButton:" destination="38f-fl-vVV" eventType="touchUpInside" id="oM0-uf-tzV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kq0-wI-KlI"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.11372549019607843" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="84O-HT-axW" firstAttribute="top" secondItem="1Js-uB-7B8" secondAttribute="bottom" constant="175" id="GRc-5u-bzq"/>
+                            <constraint firstItem="1Js-uB-7B8" firstAttribute="top" secondItem="kq0-wI-KlI" secondAttribute="top" constant="130" id="Q0E-De-AIt"/>
+                            <constraint firstItem="84O-HT-axW" firstAttribute="centerX" secondItem="1Js-uB-7B8" secondAttribute="centerX" id="Xaa-7N-OqQ"/>
+                            <constraint firstItem="wah-6T-fqd" firstAttribute="leading" secondItem="kq0-wI-KlI" secondAttribute="leading" constant="25" id="dZS-Ou-fwk"/>
+                            <constraint firstItem="wah-6T-fqd" firstAttribute="top" secondItem="kq0-wI-KlI" secondAttribute="top" constant="25" id="lJk-gA-BBN"/>
+                            <constraint firstItem="1Js-uB-7B8" firstAttribute="centerX" secondItem="fQ5-og-4Wx" secondAttribute="centerX" id="qAR-fu-0vz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SYi-t1-wIB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20.289855072463769" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MarvelLogo" width="1200" height="482"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
